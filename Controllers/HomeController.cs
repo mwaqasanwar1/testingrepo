@@ -20,7 +20,7 @@ namespace ASP_.net_Core.Controllers
         public IActionResult Index()
         {
             // Get the dynamic message from appsettings.json
-            string dynamicMessage = _configuration["AppSettings:DynamicMessage"];
+            string dynamicMessage = _configuration["appSettings:DynamicMessage"];
             
             // Pass the dynamic message to the view using ViewData
             ViewData["DynamicMessage"] = dynamicMessage ?? "Default Message"; 
